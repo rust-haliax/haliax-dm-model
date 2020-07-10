@@ -5,5 +5,15 @@ authors = ["Logan A Morrison <loanmorr@ucsc.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#
+[profile.test] 
+opt-level = 3
 
 [dependencies]
+haliax-constants = { path = "../haliax-constants" }
+haliax-thermal-functions = { path = "../haliax-thermal-functions" }
+cyphus-diffeq = { path = "../cyphus-diffeq" }
+cyphus-integration = { path = "../cyphus-integration" }
+cyphus-specfun = { path = "../cyphus-specfun" }
+ndarray = "0.13.1"
+lazy_static = "1.4.0"
